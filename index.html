@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="map.js"></script>
+    <link rel="stylesheet" href="map.css" />
+
+    <script>
+        $(document).ready(function () {
+            map.data = [
+                //{id:'', x:0, y:0} 39.931502, 32.856155
+                { id: 'izmir', x: 27.145878, y: 38.429399 },
+                { id: 'istanbul', x: 28.989518, y: 41.073903 },
+                { id: 'kars', x: 43.090693, y: 40.595234 },
+                { id: 'ankara', x: 32.856155, y: 39.931502 },
+            ];
+
+            resizeMap();
+            map.run();
+
+            $(window).resize(function () {
+                resizeMap();
+                map.run();
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+    <div id="mapArea">
+        <img id="map" src="map.png" />
+        <div id="icons">
+        </div>
+    </div>
+</body>
+</html>

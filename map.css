@@ -1,0 +1,12 @@
+﻿body {
+    margin: 0 0 0 0;
+}
+
+#icons > img{
+}
+
+.icon{
+    position:absolute;
+    width:55px;
+    cursor:pointer;
+}
