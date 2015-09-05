@@ -2,11 +2,20 @@
     margin: 0 0 0 0;
 }
 
-#icons > img{
+#icons > img {
 }
 
-.icon{
-    position:absolute;
-    width:55px;
-    cursor:pointer;
+.icon {
+    position: absolute;
+    width: 55px;
+    cursor: pointer;
+}
+
+.popup {
+    position: absolute;
+    background-color: #adadad;
+    /*border: solid 1px;*/
+    display: none;
+    padding: 10px;
+    border-radius: 20px;
 }
